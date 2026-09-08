@@ -4,30 +4,30 @@
 class Intropy < Formula
   desc "CLI for Intropy integrations"
   homepage "https://github.com/integrio-intropy/intropy-cli"
-  version "0.10.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v0.10.0/intropy_0.10.0_darwin_amd64.tar.gz"
-      sha256 "654eb0c64843e1eff19683dbea27b5b891c8fec31838e67af0ed92a88e8d39cc"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_darwin_amd64.tar.gz"
+      sha256 "eb52f005cb8bad05a0d13d9ebf1de29af1fc1737af93cb928b4153d29dfa993d"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v0.10.0/intropy_0.10.0_darwin_arm64.tar.gz"
-      sha256 "931e74b600633fb396ae7b5955ea1852b2f18d3f05e821bd1c47fd85664a1d30"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_darwin_arm64.tar.gz"
+      sha256 "9b947a2f88f844603639ef907ddeaadeb36f81db4697328186fa55c46c338ee7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v0.10.0/intropy_0.10.0_linux_amd64.tar.gz"
-      sha256 "727bbcdcf37234950bbed48ac77c37cbd0a469755b392a177ba086f83bdda96e"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_linux_amd64.tar.gz"
+      sha256 "d26bc718ac2ae81ca4e4bf060ade6cd541929ec25777bbb5e008386d30c41310"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v0.10.0/intropy_0.10.0_linux_arm64.tar.gz"
-      sha256 "b24f3bcf9c9913a1c842306193e3b615c07c624919530fdb3b735091dddde644"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_linux_arm64.tar.gz"
+      sha256 "5a63b1f4316b309ab175ee53f59f53b8be39a911b2176c2486dcab6053eaaee5"
     end
   end
 
