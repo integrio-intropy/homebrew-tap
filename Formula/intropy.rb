@@ -4,30 +4,30 @@
 class Intropy < Formula
   desc "CLI for Intropy integrations"
   homepage "https://github.com/integrio-intropy/intropy-cli"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_darwin_amd64.tar.gz"
-      sha256 "eb52f005cb8bad05a0d13d9ebf1de29af1fc1737af93cb928b4153d29dfa993d"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.1/intropy_1.0.1_darwin_amd64.tar.gz"
+      sha256 "fa2984996715017835c80b36989e3cbc142320e1194d10f96417ad423c8a5930"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_darwin_arm64.tar.gz"
-      sha256 "9b947a2f88f844603639ef907ddeaadeb36f81db4697328186fa55c46c338ee7"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.1/intropy_1.0.1_darwin_arm64.tar.gz"
+      sha256 "c0da7eebd27f55db97427a17126f0890094f98d47c36be3c6f4ef94ccdc446d4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_linux_amd64.tar.gz"
-      sha256 "d26bc718ac2ae81ca4e4bf060ade6cd541929ec25777bbb5e008386d30c41310"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.1/intropy_1.0.1_linux_amd64.tar.gz"
+      sha256 "7e41d4ff420be282f7e1bee524a70244b25a79aab25adb3e636dbe5350b4538a"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.0/intropy_1.0.0_linux_arm64.tar.gz"
-      sha256 "5a63b1f4316b309ab175ee53f59f53b8be39a911b2176c2486dcab6053eaaee5"
+      url "https://github.com/integrio-intropy/intropy-cli/releases/download/v1.0.1/intropy_1.0.1_linux_arm64.tar.gz"
+      sha256 "8d50c0dd091586e2882cadf20ad2c820491009ef748123ee2fa48e756e853ebb"
     end
   end
 
